@@ -1,0 +1,22 @@
+# General non-product-specific templates for Reddit
+# These templates are used when a general approach is more appropriate than product-specific messaging
+
+I've been exploring {technology} for a while now, and the results have been interesting. Have you looked into {related_product}?
+
+Based on my experience with {technology}, I've found that {related_product} offers some unique benefits for {personal_issue}.
+
+In my journey with {personal_story}, I discovered {related_product} which has been helpful for {specific_benefit}.
+
+After struggling with {personal_issue} for {time_period}, I found that {related_product} made a noticeable difference.
+
+What I appreciate about {related_product} is how it approaches {personal_issue} through {mechanism} rather than conventional methods.
+
+The research on {technology} for {personal_issue} is fascinating. I've had good results with {related_product} in my personal experience.
+
+I was skeptical about {technology} at first, but after trying {related_product}, I noticed improvements in {specific_benefit}.
+
+For those interested in {technology}, {related_product} offers a practical approach that I've found effective for {personal_issue}.
+
+My background in {traditional_principle} led me to explore {related_product}, which has enhanced my {spiritual_practice} practice significantly.
+
+The connection between {technology} and {benefit} is something I've experienced firsthand with {related_product}. 

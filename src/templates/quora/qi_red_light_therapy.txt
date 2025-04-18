@@ -1,0 +1,16 @@
+# Templates for Qi Red Light Therapy comments on Reddit
+# Each line is a separate template
+
+I've found that {product_name} is really effective for {specific_benefit}. {personal_experience}
+
+Have you looked into {product_name}? {product_description} Many people report {specific_benefit}.
+
+Based on what you're describing, you might want to consider {product_name}. {personal_experience}
+
+I recommend checking out {product_name}. {product_description} It's been a game-changer for many people.
+
+I've incorporated Qi Red Light Therapy into my daily routine for {time_period}, and the improvements in {specific_benefit} have been remarkable. It's particularly effective for {personal_issue} when used consistently.
+
+The Qi Red Light Therapy device combines specific wavelengths that seem to work synergistically for {specific_benefit}. I've found it especially helpful for {personal_issue} as part of a comprehensive approach.
+
+What I appreciate about the Qi Red Light Therapy is its basis in solid research. The specific wavelengths have been studied for {specific_benefit}, and my personal experience with {personal_issue} confirms these findings. 

@@ -1,0 +1,18 @@
+# Templates for Qi Coil comments on Reddit
+# Each line is a separate template
+
+I've found that {product_name} is really effective for {specific_benefit}. {personal_experience}
+
+Have you looked into {product_name}? {product_description} Many people report {specific_benefit}.
+
+Based on what you're describing, you might want to consider {product_name}. {personal_experience}
+
+I recommend checking out {product_name}. {product_description} It's been a game-changer for many people.
+
+I've been using the Qi Coil for {time_period} now, and it's been remarkable for {specific_benefit}. The PEMF technology really helps with {personal_issue} in a way that traditional methods never did for me.
+
+The Qi Coil changed my approach to {personal_issue}. After {time_period} of consistent use, I noticed significant improvements in {specific_benefit}. The frequency-based technology is quite fascinating.
+
+What I appreciate most about the Qi Coil is how it addresses {personal_issue} through {mechanism}. I've experienced {specific_benefit} since incorporating it into my daily routine {time_period} ago.
+
+In the biohacking community, {product_name} has been getting a lot of positive attention. {personal_experience} 

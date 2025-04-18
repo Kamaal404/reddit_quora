@@ -1,0 +1,224 @@
+# QiLifeStore Social Media Engagement Bot - Default Configuration
+
+# General settings
+general:
+  dry_run: false  # Set to true for testing without posting
+  active_hours:
+    start: "08:00"  # 8 AM
+    end: "22:00"    # 10 PM
+  active_days:
+    - monday
+    - tuesday
+    - wednesday
+    - thursday
+    - friday
+    - saturday
+    - sunday
+  data_directory: "data"
+  cache_directory: "data/cache"
+  niches_enabled: true  # Enable targeting by niches using src/config/niches.py
+
+# Platform-specific settings
+platforms:
+  reddit:
+    enabled: true
+    monitoring_interval: 60  # in minutes
+    max_daily_comments: 10
+    subreddits:
+      - name: "Biohacking"
+        weight: 5
+        niche: "biohacking"
+      - name: "PEMF"
+        weight: 5
+        niche: "pemf"
+      - name: "EMF"
+        weight: 3
+        niche: "pemf"
+      - name: "energy_healing"
+        weight: 4
+        niche: "spirituality"
+      - name: "redlighttherapy"
+        weight: 3
+        niche: "health_tech"
+      - name: "Nootropics"
+        weight: 3
+        niche: "biohacking"
+      - name: "Supplements"
+        weight: 2
+        niche: "biohacking"
+      - name: "QuantifiedSelf"
+        weight: 2
+        niche: "health_tech"
+      - name: "Longevity"
+        weight: 2
+        niche: "biohacking"
+      - name: "AlternativeHealth"
+        weight: 3
+        niche: "pemf"
+      - name: "ChronicPain"
+        weight: 2
+        niche: "pemf"
+      - name: "Fibromyalgia"
+        weight: 2
+        niche: "pemf"
+      - name: "Spirituality"
+        weight: 4
+        niche: "spirituality"
+      - name: "Meditation"
+        weight: 3
+        niche: "spirituality"
+      - name: "Awakened"
+        weight: 3
+        niche: "spirituality"
+      - name: "Energy_Work"
+        weight: 4
+        niche: "spirituality"
+      - name: "Psychonaut"
+        weight: 2
+        niche: "spirituality"
+      - name: "SoundHealing"
+        weight: 4
+        niche: "frequency_healing"
+      - name: "HealthGadgets"
+        weight: 3
+        niche: "health_tech"
+      - name: "Futurology"
+        weight: 2
+        niche: "health_tech"
+      - name: "MedicalTechnology"
+        weight: 3
+        niche: "health_tech"
+    post_types:
+      - "question"
+      - "discussion"
+      - "recommendation"
+    relevance_threshold: 0.6  # Minimum relevance score to engage
+    comment_delay_range:
+      min: 10  # Changed from 60 seconds to 10 seconds
+      max: 30  # Changed from 300 seconds to 30 seconds
+
+  quora:
+    enabled: true
+    monitoring_interval: 120  # in minutes
+    max_daily_comments: 10
+    use_headless: false  # Changed from true to false to ensure browser is visible
+    browser_type: "undetected"  # Options: standard, undetected
+    topics:
+      - name: "PEMF"
+        weight: 5
+        niche: "pemf"
+      - name: "Electromagnetic Therapy"
+        weight: 4
+        niche: "pemf"
+      - name: "Energy Healing"
+        weight: 5
+        niche: "spirituality"
+      - name: "Biohacking"
+        weight: 4
+        niche: "biohacking"
+      - name: "Red Light Therapy"
+        weight: 3
+        niche: "health_tech"
+      - name: "Human Enhancement"
+        weight: 3
+        niche: "biohacking"
+      - name: "Nootropics"
+        weight: 3
+        niche: "biohacking"
+      - name: "Self-Improvement"
+        weight: 2
+        niche: "biohacking"
+      - name: "Health Optimization"
+        weight: 3
+        niche: "biohacking"
+      - name: "Alternative Medicine"
+        weight: 3
+        niche: "pemf"
+      - name: "Pain Management"
+        weight: 2
+        niche: "pemf"
+      - name: "Energy Medicine"
+        weight: 4
+        niche: "pemf"
+      - name: "Spirituality"
+        weight: 4
+        niche: "spirituality"
+      - name: "Consciousness"
+        weight: 3
+        niche: "spirituality"
+      - name: "Meditation"
+        weight: 3
+        niche: "spirituality"
+      - name: "Metaphysics"
+        weight: 3
+        niche: "spirituality"
+      - name: "Sound Healing"
+        weight: 4
+        niche: "frequency_healing"
+      - name: "Frequency Therapy"
+        weight: 5
+        niche: "frequency_healing"
+      - name: "Rife Frequencies"
+        weight: 4
+        niche: "frequency_healing"
+      - name: "Vibrational Healing"
+        weight: 4
+        niche: "frequency_healing"
+      - name: "Health Technology"
+        weight: 3
+        niche: "health_tech"
+      - name: "Wearable Technology"
+        weight: 3
+        niche: "health_tech"
+      - name: "Digital Health"
+        weight: 3
+        niche: "health_tech"
+      - name: "Medical Devices"
+        weight: 3
+        niche: "health_tech"
+      - name: "Health Monitoring"
+        weight: 3
+        niche: "health_tech"
+    relevance_threshold: 0.4  # Lowered from 0.7 to be more lenient in finding questions
+    question_age_limit: 90  # in days
+    comment_delay_range:
+      min: 5  # Changed from 300 (5 minutes) to 5 seconds for testing
+      max: 15  # Changed from 1200 (20 minutes) to 15 seconds for testing
+
+# NLP settings
+nlp:
+  relevance_model: "spacy"  # Options: spacy, transformers
+  max_context_length: 500  # Maximum number of characters to analyze
+  cache_responses: true
+  negative_keywords:
+    - "scam"
+    - "fraud"
+    - "fake"
+    - "pseudoscience"
+    - "waste of money"
+    - "doesn't work"
+  niche_specific_keywords: true  # Use niche-specific keywords for relevance analysis
+  
+# Comment generation settings
+comment_generation:
+  templates_directory: "src/templates"
+  min_words: 50
+  max_words: 200
+  include_personal_experience_probability: 0.7
+  include_product_link_probability: 0.5
+  max_comments_per_thread: 1
+  avoid_consecutive_platform_posts: true  # Avoid posting on the same platform consecutively
+  tailor_comments_by_niche: true  # Tailor comment style based on the niche
+
+# Analytics settings
+analytics:
+  enabled: true
+  track_engagement: true
+  track_link_clicks: true  # Requires URL shortener with analytics
+  reporting_interval: 24  # in hours
+  metrics:
+    - comments_posted
+    - relevance_scores
+    - engagement_rate
+    - topic_distribution
+    - niche_performance  # Track performance by niche 
